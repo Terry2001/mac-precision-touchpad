@@ -80,6 +80,18 @@ People familiar with me know that I don't use Apple MacBook (so development work
 
 I would like to thank projects like [magictrackpad2-dkms](https://github.com/robbi5/magictrackpad2-dkms) and [macbook12-spi-driver](https://github.com/cb22/macbook12-spi-driver) that inspire me. I would also like to thank my friends for providing me immense help on devices and testing.
  
+ 
+ 
+## Development install
+* switch windows to test mode:  cmd(as administrator):  bcdedit /set testsigning on  then restart computer
+* Build release version
+* In device managerment, select apple touch input
+* context menu -> update driver -> browser driver in my computer -> select from avaliable driver list -> install from disk
+* select folder D:\github\mac-precision-touchpad\build\AmtPtpDeviceUsbUm\x64\Release\AmtPtpDeviceUsbUm
+* then install, when display a warning, select yes
+* close test mode:  cmd(as administrator):  bcdedit /set testsigning off then restart computer
+
+
 ## License
 
 - USB driver is licensed under [GPLv2](LICENSE-GPL.md).
